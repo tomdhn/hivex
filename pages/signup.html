@@ -38,19 +38,19 @@
 	 
 	<div id="form" class="d-flex justify-content-around">
 	  <div class="d-flex align-items-start flex-column">
-		<select id="accountType" name="Type of User">
+		<select id="accountType">
+		  <option value="n/a">ACCOUNT TYPE \/</option>
 		  <option value="user">USER</option>
 		  <option value="org">ORGANISATION</option>
 		</select>
 		<form>
 		  <input type="text" placeholder="USERNAME" maxlength="10"/>
+		  <input type="text" placeholder="EMAIL" maxlength="10"/>
+		  <input type="text" placeholder="PASSWORD" maxlength="10"/>
+		  <input type="text" placeholder="PASSWORD AGAIN" maxlength="10"/>
 		</form>
-		<form action="pages/signup.html">
+		<form action="../pages/signup.html">
 		  <input type="submit" value="SIGN UP" />
-		</form>
-		<form id="guestLogin" action="pages/signup.html">
-		  Or sign in as <br />
-		  <a href="pages/filter.html">guest</a>
 		</form>
 	  </div>
 	</div>
