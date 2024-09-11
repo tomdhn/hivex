@@ -8,6 +8,11 @@
 
 :root{
     --background-color: #ffeb38;
+    --bodyBackground: white;
+    --footerColor: black;
+    --footerText: white;
+    --selectColor: black;
+    --selectFont: #ffeb38;
 }
 
 body{
@@ -16,10 +21,59 @@ body{
     color: white;
 }
 
-
-
 .PageHead{
     font-size: 6rem;
     text-align: center;
     margin: 1em 0;
+}
+
+.headLogo{
+    height: 8rem;
+    margin: 0.5rem;
+}
+
+.head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--background-color);
+}
+
+.body{
+    background-color: var(--bodyBackground);
+    height: 90vh;
+    padding: 1rem;
+}
+
+.select{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:  1rem 0 ;
+}
+
+.select *{
+    background-color: var(--selectColor);
+    color: var(--selectFont) !important;
+    font-size: 5rem !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+    color: white;
+  }
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footerColor);
+    color: var(--footerText);
+    border: 10px solid var(--footerColor);
+}
+
+.footer a{
+    text-align: center;
+    font-size: 5rem;
 }
