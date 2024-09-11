@@ -19,27 +19,25 @@
     <link rel="stylesheet" href="stylesheets/login.css" />
   </head>
   <body>
-    <div id="body">
-          <img src="assets/logoTransparent.png" alt="logo" style="width: 100vw" />
-        </div>
-        <div class="d-flex justify-content-around">
-          <h1 class="PageHead">WELCOME !</h1>
-        </div>
-        <div id="form" class="d-flex justify-content-around">
-          <div
-            action="pages/filter.html"
-            class="d-flex align-items-start flex-column"
-          >
-          <form action="pages/signup.html">
-            <input type="submit" value="LOGIN" />
-            <form action="pages/signup.html"></form>
-            <input type="submit" value="SIGN UP" />
-          </form>
-            <div id="guestLogin">
-              Or sign in as <br />
-              <a href="pages/filter.html">guest</a>
-            </div>
-          </div>
+    <div class="d-flex justify-content-around" id="body">
+      <img src="assets/logoTransparent.png" alt="logo" style="width: 100vw" />
+    </div>
+    <div class="d-flex justify-content-around">
+      <h1 class="PageHead">WELCOME !</h1>
+    </div>
+    <div id="form" class="d-flex justify-content-around">
+      <div class="d-flex align-items-start flex-column">
+        <form action="pages/filter.html">
+          <input type="submit" value="LOGIN" />
+        </form>
+        <form action="pages/signup.html">
+          <input type="submit" value="SIGN UP" />
+        </form>
+        <form id="guestLogin" action="pages/signup.html">
+          Or sign in as <br />
+          <a href="pages/filter.html">guest</a>
+        </form>
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
