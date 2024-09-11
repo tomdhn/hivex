@@ -2,30 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color:#ffeb38;
     color: black;
     font-family: "Dela Gothic One", sans-serif;
 }
 
+:root{
+    --background-color: #ffeb38;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #ffeb38;
+    background-color: var(--background-color);
     color: white;
 }
 
-form *{
-    width: 60vw;
-    height: 2em;
-}
 
-form input{
-    font-size: 5rem;
-}
-
-#guestLogin{
-    font-size: 3rem;
-    text-align: center;
-}
 
 .PageHead{
     font-size: 6rem;
