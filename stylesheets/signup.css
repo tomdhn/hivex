@@ -3,27 +3,70 @@ form *{
     height: 2em;
 }
 
-form input, #accountType{
-    font-size: 5rem;
+form input{
+    font-size: 3rem;
     text-align: center;
     background-color: #ffeb38;
     margin: 0.2em 0;
     border: 0.2em solid black;
     border-radius: 0.5em;
-    height: 2em;
+    height: 3em;
     width: 80vw;
 }
 
-#guestLogin, #guestLogin *{
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    width: 100%;
+select {
+	font-size: 3rem;
+	text-align: center;
+    background-color: #ffeb38;
+    margin: 0.2em 0;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+    height: 3em;
+    width: 40vw;
+	appearance: none;
+}
+
+#Confirmbutton {
+	font-size: 3rem;
+	text-align: center;
+    background-color: #ffeb38;
+    margin: 0.2em 0;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+    height: 3em;
+    width: 40vw;
 }
 
 .Header {
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.Doublespace {
+	display: grid;
+	grid-template-columns: 2.5fr 2.5fr;
+}
+
+#subtext {
+	font-size: 3rem
+}
+
+option {
+    background-color: var(--background-color);
+    color: black;
+	appearance: none;
+	font-size: 1rem;
+}
+
+input::placeholder {
+    color: #484848;
+}
+
+option:hover {
+    background-color: black;
+	color: white;
+}
+
+option:disabled {
+	display: none;
 }
