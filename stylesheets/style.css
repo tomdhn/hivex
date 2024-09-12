@@ -13,6 +13,10 @@
     --footerText: white;
     --selectColor: black;
     --selectFont: #ffeb38;
+    --building-color: #FF9800;
+    --house-color: #0288D1;
+    --shop-color: #7B1FA2;
+    --warehouse-color: #558B2F;
 }
 
 body{
@@ -99,6 +103,7 @@ a:has(.RecommendedItem){
 .btn {
     background-color: black !important;
     color: white;
+
     border: 10px solid var(--background-color);
 }
 
