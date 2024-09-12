@@ -165,7 +165,7 @@
         content.innerHTML = `
           <div class="icon">
               <i aria-hidden="true" class="fa fa-icon fa-${property.type}" title="${property.type}"></i>
-              <span class="material-symbols-outlined">${property.type}</span>
+              <span class="material-symbols-outlined" style="font-size:3em !important">${property.icon}</span>
           </div>
           <div class="details">
               <div class="price">${property.price}</div>
@@ -271,18 +271,18 @@
         {
           description: "Fureys Concert",
           price: "€ 22,00",
-          type: "Music",
-          size: 600,
+          type: "shop",
+          icon: "Music_note",
           position: {
             lat: 53.991746,
             lng: -6.376808,
           },
         },
         {
-          address: "108 Squirrel Ln &#128063;, Menlo Park, CA",
-          description: "Townhouse with friendly neighbors",
-          price: "$ 3,050,000",
-          type: "building",
+          description: "Pub",
+          price: "€ 12,00",
+          type: "shop",
+          icon: "nightlife",
           bed: 4,
           bath: 3,
           size: 200,
@@ -296,6 +296,7 @@
           description: "Spacious warehouse great for small business",
           price: "$ 3,125,000",
           type: "warehouse",
+          icon: "warehouse",
           bed: 4,
           bath: 4,
           size: 800,
@@ -308,7 +309,8 @@
           address: "98 Aleh Ave, Palo Alto, CA",
           description: "A lovely store on busy road",
           price: "$ 4,225,000",
-          type: "store-alt",
+          type: "building",
+          icon: "store",
           bed: 2,
           bath: 1,
           size: 210,
