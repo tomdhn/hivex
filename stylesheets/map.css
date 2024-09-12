@@ -1,0 +1,170 @@
+#EventContent {
+  height: 90%;
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.property {
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  color: #263238;
+  display: flex;
+  font-size: 28px; /* Increased font size */
+  gap: 30px; /* Doubled the gap */
+  height: 100px; /* Doubled height for the marker */
+  justify-content: center;
+  padding: 8px; /* Increased padding */
+  position: relative;
+  transition: all 0.3s ease-out;
+  width: 100px; /* Doubled width for the marker */
+}
+
+.property::after {
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 18px solid #FFFFFF;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 95%;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease-out;
+  width: 0;
+  z-index: 1;
+}
+
+.property .icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.property .icon svg {
+  height: 100px; /* Increased the icon size */
+  width: 100px; /* Increased the icon size */
+}
+
+.property .details {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+}
+
+.property .address {
+  color: #9E9E9E;
+  font-size: 20px; /* Doubled font size */
+  margin-bottom: 20px; /* Doubled margin */
+  margin-top: 10px; /* Doubled margin */
+}
+
+.property .features {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Doubled gap */
+}
+
+.property .features > div {
+  align-items: center;
+  background: #F5F5F5;
+  border-radius: 10px; /* Increased radius */
+  border: 1px solid #ccc;
+  display: flex;
+  font-size: 20px; /* Doubled font size */
+  gap: 10px; /* Doubled gap */
+  padding: 10px; /* Increased padding */
+}
+
+/* Property styles in highlighted state */
+.property.highlight {
+  background-color: #FFFFFF;
+  border-radius: 16px; /* Increased border radius */
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 160px; /* Doubled height for highlighted marker */
+  padding: 16px 30px; /* Increased padding */
+  width: auto;
+}
+
+.property.highlight::after {
+  border-top: 18px solid #FFFFFF; /* Doubled arrow size */
+}
+
+.property.highlight .details {
+  display: flex;
+}
+
+.property.highlight .icon svg {
+  width: 120px; /* Doubled icon size in highlighted state */
+  height: 120px;
+}
+
+.property .bed {
+  color: #FFA000;
+}
+
+.property .bath {
+  color: #03A9F4;
+}
+
+.property .size {
+  color: #388E3C;
+}
+
+/* House icon colors */
+.property.highlight:has(.fa-house) .icon {
+  color: var(--house-color);
+}
+
+.property:not(.highlight):has(.fa-house) {
+  background-color: var(--house-color);
+}
+
+.property:not(.highlight):has(.fa-house)::after {
+  border-top: 18px solid var(--house-color);
+}
+
+/* Building icon colors */
+.property.highlight:has(.fa-building) .icon {
+  color: var(--building-color);
+}
+
+.property:not(.highlight):has(.fa-building) {
+  background-color: var(--building-color);
+}
+
+.property:not(.highlight):has(.fa-building)::after {
+  border-top: 18px solid var(--building-color);
+}
+
+/* Warehouse icon colors */
+.property.highlight:has(.fa-warehouse) .icon {
+  color: var(--warehouse-color);
+}
+
+.property:not(.highlight):has(.fa-warehouse) {
+  background-color: var(--warehouse-color);
+}
+
+.property:not(.highlight):has(.fa-warehouse)::after {
+  border-top: 18px solid var(--warehouse-color);
+}
+
+/* Shop icon colors */
+.property.highlight:has(.fa-shop) .icon {
+  color: var(--shop-color);
+}
+
+.property:not(.highlight):has(.fa-shop) {
+  background-color: var(--shop-color);
+}
+
+.property:not(.highlight):has(.fa-shop)::after {
+  border-top: 18px solid var(--shop-color);
+}
