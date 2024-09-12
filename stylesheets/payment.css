@@ -1,0 +1,16 @@
+.PaymentItem{
+	background-color: white !important;
+}
+
+.PaymentItem *{
+	color: black !important;
+}
+
+.PaymentItem img{
+	width: 100%;
+}
+
+.EventContainer{
+    height: 50vw;
+    width: 100%;
+}
