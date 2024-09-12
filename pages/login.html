@@ -30,34 +30,31 @@
 	<!-- header -->
 	
 	<div class="d-flex justify-content-around">
-		<h1 class="PageHead">SIGN UP</h1>
+		<h1 class="PageHead">LOGIN</h1>
 	</div>
 	<div class="d-flex justify-content-around">
-		<h1 id="subtext" style="margin: 1em 0">CREATE YOUR ACCOUNT</h1>
+		<h1 id="subtext" style="margin: 1em 0"></h1>
 	</div>
 	 
 	<div id="form" class="d-flex justify-content-around">
 	  <div class="d-flex align-items-center flex-column">
-		<div class="Doublespace">
-			<h1 id="subtext" class="d-flex justify-content-around" style="margin: auto 0">I AM A / AN:</h1>
-			<select id="accountType" class="d-flex justify-content-around">
-			  <option id="option" value="" disabled selected >CLICK ME</option>
-			  <option id="option" value="user">USER</option>
-			  <option id="option" value="org">ORGANISATION</option>
-			</select>
+		<form class="d-flex align-items-center flex-column">
+			<input type="text" name="nil" placeholder="USERNAME / EMAIL" maxlength="20"/>
+			<input type="text" name="nil" placeholder="PASSWORD" maxlength="15"/>
+		</form>
+		
+		<div>
+		
+		<div class="Doublespace2">
+			<input type="checkbox" name="RememberMe">
+			<h1 id="subtext" style="margin: auto 0">REMEMBER ME</h1>
 		</div>
 		
-		<form class="d-flex align-items-center flex-column">
-			<input type="text" name="nil" placeholder="USERNAME" maxlength="15"/>
-			<input type="text" name="nil" placeholder="EMAIL" maxlength="20"/>
-			<input type="text" name="nil" placeholder="PASSWORD" maxlength="15"/>
-			<input type="text" name="nil" placeholder="CONFIRM PASSWORD" maxlength="15"/>
-		</form>
 		<div class="Doublespace">
 		<div></div>
 		 <div>
 			<form action="filter.html">
-				<input id="Confirmbutton" type="submit" value="SIGN UP" />
+				<input id="Confirmbutton" type="submit" value="LOGIN" />
 			</form>
 		 </div>
 		</div>

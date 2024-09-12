@@ -47,6 +47,11 @@ select {
 	grid-template-columns: 2.5fr 2.5fr;
 }
 
+.Doublespace2 {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+
 #subtext {
 	font-size: 3rem
 }
@@ -69,4 +74,14 @@ option:hover {
 
 option:disabled {
 	display: none;
+}
+
+input {
+	font-size: 3rem;
+	text-align: center;
+    background-color: #ffeb38;
+    margin: 0.2em 0;
+    border: 0.2em solid black;
+    border-radius: 0.5em;
+	height: 2em;
 }
